@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    SCROLL-CONTROLLED VIDEO
+    - .scroll-video is a tall section. Its height is the amount of scrolling
+      that plays the whole video (set with --scroll-length in style.css).
+    - .scroll-video__stage sticks to the screen while you scroll through
+      that section, so the video stays fixed and only its frames change.
+    - script.js turns the scroll position into the video's current time.
+    - VIDEO SOURCE: the src below is the only line to change when the video
+      moves to external hosting.
+  -->
+  <section class="scroll-video" id="scroll-video">
+    <div class="scroll-video__stage">
+      <video
+        class="scroll-video__media"
+        src="./assets/RVR1.mp4"
+        muted
+        playsinline
+        webkit-playsinline
+        preload="metadata"
+        disablepictureinpicture
+        disableremoteplayback
+        aria-hidden="true"
+        tabindex="-1"></video>
+    </div>
+  </section>
+
+  <!-- Future sections go here, below the video section. -->
+
+  <script src="script.js"></script>
+</body>
+</html>
