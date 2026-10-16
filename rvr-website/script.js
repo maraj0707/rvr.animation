@@ -1,4 +1,4 @@
-/*
+﻿/*
   Scroll-controlled video
   -----------------------
   The page's scroll position decides which frame of the video is shown.
@@ -232,3 +232,4 @@
   video.preload = 'auto';
 video.load();
 })();
+
