@@ -229,5 +229,6 @@
     window.addEventListener(type, primeOnGesture, { passive: true })
   );
 
-  loadFullVideo();
+  video.preload = 'auto';
+video.load();
 })();
